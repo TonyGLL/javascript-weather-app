@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+    
+    <div class="container p-4">
+        <div class="col-md-4 mx-auto text-center">
+            <div class="card">
+                <div class="card-body">
+                    <h1 id="weather-location" class="h3"></h1>
+                    <h3 id="weather-description" class="h4"></h3>
+                    <h3 id="weather-string"></h3>
+                    <ul class="list-group mt-3">
+                        <li id="weather-humidity" class="list-group-item"></li>
+                        <li id="weather-wind" class="list-group-item"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <form id="w-form">
+                        <div class="form-group">
+                            <input type="text" id="city" class="form-control" placeholder="City" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="countryCode" class="form-control" placeholder="Country Code">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-dark btn-block" id="w-change-btn">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
